@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-   /* border: 1px solid red; */
+    border: 1px solid red; 
 }
 
 :root {
@@ -34,6 +34,9 @@ header {
     padding: 2rem 1.5rem 2rem 1rem;   
 }
 
+main {
+    margin: 0 auto;
+}
 /* Mobile First */
 
 /* Menu Nav */
@@ -104,6 +107,7 @@ header {
 /* Section 2: About */
 
 .about-section {
+    margin: 0 auto;
     background-color: var(--black);
     color: var(--white);
     text-align: center;
@@ -121,7 +125,6 @@ header {
 }
 
 .card-container {
-    max-width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -144,7 +147,6 @@ header {
 }
 
 .link-container {
-    height: 250px;
 }
 
 .link-youtube {
@@ -162,16 +164,17 @@ header {
 }
 
 .grilla-imagen {
-    width: 400px;
+    margin: 2rem auto;
+    max-width: 300px;
 }
 
 /* Grid Container */
 
 .container-grid {
-    padding: 2rem;
+   /*padding: 2rem;*/
     display: grid;
     place-content: center;
-    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-columns: 75px 75px 75px 75px;
     grid-auto-rows: 1fr;
     gap: 0.5rem;
     height: 115vh;
@@ -298,10 +301,18 @@ header {
     gap: 0.25rem;
 }
 
+.iconos-contact-mail {
+    display: none;
+}
+
 /* seccion mail */
 
+.mail-contact{
+    margin: 0 auto;
+}
+
 .form-box input {
-    width: 350px;
+    width: 250px;
     border: none;
     padding: 5px;
     border-radius: 5px; 
@@ -321,7 +332,7 @@ header {
 }
 
 .mensaje-box textarea {
-    width: 350px;
+    width: 250px;
     height: 200px;
     border: none;
     border-radius: 5px;
