@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial scale=1.0" />
-    <title>Landing Page FA REPOSITORIO</title>
+    <title>Landing Page FA</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -59,7 +59,13 @@
             voluptates dignissimos saepe magni temporibus accusantium libero
             doloribus, vel ducimus earum reprehenderit necessitatibus!
           </p>
-          <a href="#link a youtube" class="btn-hero">YouTube</a>
+          <div class="btn-hero">
+            <i class="fa-brands fa-youtube"></i>
+            <a
+              href="https://www.youtube.com/channel/UCeRUV5R83ir7IRGzNPa3CQQ/videos"
+              >YouTube</a
+            >
+          </div>
         </div>
         <div class="hero-img">
           <img src="./img/hero.png" alt="manifiesto" />
@@ -99,7 +105,84 @@
         </div>
       </section>
       <!-- Section 3: Grilla -->
-      <section class="grid-section"></section>
+      <section class="grid-section">
+        <div class="grilla-img">
+          <img
+            src="./img/grilla.png"
+            alt="grilla septiembre"
+            class="grilla-imagen"
+          />
+        </div>
+        <div class="container-grid">
+          <div class="item-grid"></div>
+          <div class="item-grid"></div>
+          <div class="item-grid"></div>
+          <div class="item-grid"></div>
+          <div class="item-grid"></div>
+          <div class="item-grid"></div>
+          <div class="item-grid"></div>
+          <div class="item-grid"></div>
+          <div class="item-grid"></div>
+          <div class="item-grid"></div>
+          <div class="item-grid"></div>
+        </div>
+      </section>
+      <!-- Section 4: Contact-->
+      <section class="contact-section">
+        <div class="mail-contact">
+          <div class="mail-img">
+            <img src="" alt="" />
+          </div>
+          <form class="form-mail">
+            <div class="form-box">
+              <label for="nombre"></label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Nombre"
+              />
+            </div>
+            <div class="form-box">
+              <label for="mail"></label>
+              <input type="email" id="mail" name="mail" placeholder="Correo" />
+            </div>
+            <div class="mensaje-box">
+              <textarea
+                name="mensaje"
+                placeholder="Escribinos un mensaje"
+              ></textarea>
+              <input type="button" value="Enviar" id="boton-enviar" />
+            </div>
+          </form>
+        </div>
+        <div class="media-contact">
+          <div class="iconos-contact">
+            <a href="https://www.instagram.com/frecuencia.atlantica/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.instagram.com/frecuencia.atlantica/"
+              >@frecuencia.atlantica</a
+            >
+          </div>
+
+          <div class="iconos-contact">
+            <i class="fa-brands fa-youtube"></i>
+            <a
+              href="https://www.youtube.com/channel/UCeRUV5R83ir7IRGzNPa3CQQ/videos"
+              >YouTube</a
+            >
+          </div>
+
+          <div class="iconos-contact">
+            <i class="fa-solid fa-envelope"></i>
+            <p>frecuencia.atlantica@gmail.com</p>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <p>Frecuencia Atlántica 2022</p>
+    </footer>
   </body>
 </html>
