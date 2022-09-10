@@ -13,4 +13,71 @@
       referrerpolicy="no-referrer"
     />
   </head>
+  <body>
+    <header class="header-container">
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="./img/logo.png" alt="logo" class="logo"
+        /></a>
+      </div>
+      <nav class="navbar">
+        <label for="toggle-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="toggle-menu" />
+        <ul class="navbar-list">
+          <li>
+            <a class="navbar-link" href="index.html">F.A.</a>
+          </li>
+          <li>
+            <a class="singin-link" href="login.html">Ingresar</a>
+          </li>
+          <li>
+            <a class="login-link" href="signin.html">Registrarse</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="signin-form-container">
+      <form class="signin-form">
+        <h1>REGISTRARSE</h1>
+
+        <p class="item-signin">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" />
+        </p>
+
+        <p class="item-signin">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" />
+        </p>
+
+        <p class="item-signin">
+          <label for="nac">Fecha de nacimiento</label>
+          <input type="date" id="nac" />
+        </p>
+
+        <p class="item-signin">
+          <label for="mail">Mail</label>
+          <input type="email" id="mail" name="mail" placeholder="Email" />
+        </p>
+
+        <p class="item-signin">
+          <label for="pass">Contraseña</label>
+          <input type="password" id="pass" name="pass" placeholder="Password" />
+        </p>
+
+        <p class="item-signin-last">
+          <input type="checkbox" id="acepto" />
+          <label for="acepto"
+            >Quiero recibir novedades de Frecuencia Atlántica</label
+          >
+        </p>
+
+        <button type="submit" id="registrar" name="registrar">Enviar</button>
+      </form>
+    </main>
+    <footer>
+      <p>Frecuencia Atlántica 2022</p>
+    </footer>
+  </body>
 </html>

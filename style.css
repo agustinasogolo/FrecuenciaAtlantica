@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2? family= Alata & display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Alata', sans-serif;
     /*border: 1px solid red; */
 }
 
@@ -164,6 +167,9 @@ header {
     align-items: center;
     border: 1px solid var(--white);
     border-radius: 1rem;
+}
+.card-item p {
+    padding: 0.5rem;
 }
 
 .card-item img {
@@ -386,34 +392,6 @@ footer {
 }
 
 
-/* LOGIN INGRESAR */
-
-.main-login {
-   /*background-color: red;*/
-    width: 100%;
-}
-
-.section-content {
-    margin: 0 auto;
-    padding: 3rem;
-    /*background-color: blue;*/
-    max-width: 500px;
-}
-
-.login-form {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.login-form input, .login-form button {
-    padding: 0.50rem;
-}
-
-
-
-
-
 
 
 
@@ -538,6 +516,46 @@ footer {
 
 }
 
+@media (min-width: 540px) {
+
+    .link-youtube {
+        width: 500px;
+      }
+    
+    /* Section Grid */
+    
+    .grilla-imagen {
+        margin: 2rem auto;
+        max-width: 600px;
+    }
+    
+    .container-grid {
+        /*padding: 2rem;*/
+         display: grid;
+         place-content: center;
+         grid-template-columns: 100px 100px 100px 100px;
+         grid-auto-rows: 1fr;
+         gap: 0.5rem;
+         height: 700px;
+         /*height: 75vh;*/
+     }
+    
+     /* Contact */
+    
+     .form-mail input {
+        width: 400px;
+    }
+    
+     .mensaje-box textarea {
+        width: 400px;
+        height: 300px;
+        padding: 0.50rem;
+    }
+
+
+}
+
+
 /* Desktop */
 
 @media (min-width: 1024px) {
@@ -603,12 +621,134 @@ footer {
         margin: 100px auto;
       }
 
+      .link-youtube {
+        width: 800px;
+      }
+
       footer {
         max-width: 1100px;
         width: 100%;
       }
 }
-  
+
+
+
+
+/* LOGIN INGRESAR */
+
+.main-login {
+    /*background-color: red;*/
+     width: 100%;
+     margin-top: 150px;
+ }
+ 
+ .section-content {
+     margin: 0 auto;
+     padding: 3rem;
+     /*background-color: blue;*/
+     max-width: 500px;
+ }
+ 
+ .login-form {
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
+ }
+ 
+ .login-form input, .login-form button {
+     padding: 1rem;
+ }
+
+#entrar {
+    border-style: none;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: black;
+    color: white;
+}
+
+#resetear {
+    border-style: none;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: white ;
+    color: black;
+}
+
+
+
+/* ESTILOS SIGNIN */
+
+.signin-form-container {
+    margin-top: 150px;
+    display: flex;
+}
+
+.item-signin {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.item-signin input {
+    padding: 1rem;
+}
+
+.item-signin-last {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+#acepto {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.25rem;
+} 
+
+#registrar {
+    border-style: none;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     /* menu nav */
