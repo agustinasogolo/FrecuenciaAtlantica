@@ -14,57 +14,53 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header class="header-container">
+      <div class="logo-container">
+        <img src="./img/logo.png" alt="logo" class="logo" />
+      </div>
       <nav class="navbar">
-        <ul class="menu">
+        <label for="toggle-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="toggle-menu" />
+        <ul class="navbar-list">
+          <li><a class="navbar-link" href="#hero">F.A.</a></li>
+          <li><a class="navbar-link" href="#about">Procucciones</a></li>
+          <li><a class="navbar-link" href="#galery">Galeria</a></li>
+          <li><a class="navbar-link" href="#contact">Contacto</a></li>
           <li>
-            <a><img src="./img/logo.png" alt="logo" class="logo" /></a>
+            <a class="singin-link" href="login.html">Ingresar</a>
           </li>
-          <div class="container-icon">
-            <a href="#"><i class="fas fa-bars"></i></a>
-            <!--<label for="toggle-menu"> <i class="fas fa-bars"></i> </label>
-            <input type="checkbox" id="toggle-menu" /> -->
-          </div>
-          <div class="container-nav">
-            <div class="item-nav">
-              <ul class="navbar-list">
-                <li><a class="navbar-link" href="#hero">F.A.</a></li>
-                <li><a class="navbar-link" href="#about">Procucciones</a></li>
-                <li><a class="navbar-link" href="#galery">Galeria</a></li>
-                <li><a class="navbar-link" href="#contact">Contacto</a></li>
-              </ul>
-            </div>
-            <div class="item-nav">
-              <ul class="register-list">
-                <li>
-                  <a class="singin-link" href="singin.html">Ingresar</a>
-                </li>
-                <li>
-                  <a class="login-link" href="login.html">Registrarse</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <li>
+            <a class="login-link" href="signin.html">Registrarse</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main>
+
+    <main class="mainIndex">
       <!-- Section 1: Hero-->
-      <section class="hero-section">
+      <section class="hero-section" id="hero">
         <div class="hero-content">
-          <img src="./img/manifiesto.png" alt="manifiesto" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-            aliquid natus dolorum excepturi praesentium. Cupiditate beatae error
-            voluptates dignissimos saepe magni temporibus accusantium libero
-            doloribus, vel ducimus earum reprehenderit necessitatibus!
-          </p>
-          <div class="btn-hero">
-            <i class="fa-brands fa-youtube"></i>
-            <a
-              href="https://www.youtube.com/channel/UCeRUV5R83ir7IRGzNPa3CQQ/videos"
-              >YouTube</a
-            >
+          <div class="img-manif-hero">
+            <img
+              src="./img/manifiesto.png"
+              alt="manifiesto"
+              class="manif-img"
+            />
+          </div>
+          <div class="text-btn-hero">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              aliquid natus dolorum excepturi praesentium. Cupiditate beatae
+              error voluptates dignissimos saepe magni temporibus accusantium
+              libero doloribus, vel ducimus earum reprehenderit necessitatibus!
+            </p>
+            <div class="btn-hero">
+              <i class="fa-brands fa-youtube"></i>
+              <a
+                href="https://www.youtube.com/channel/UCeRUV5R83ir7IRGzNPa3CQQ/videos"
+                >YouTube</a
+              >
+            </div>
           </div>
         </div>
         <div class="hero-img">
@@ -72,7 +68,7 @@
         </div>
       </section>
       <!-- Section 2: About-->
-      <section class="about-section">
+      <section class="about-section" id="about">
         <h2>Conocé Frecuencia Atlántica</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -81,7 +77,7 @@
         <!-- Card container-->
         <div class="card-container">
           <div class="card-item">
-            <img src="./img/logo-blanco.png" alt="logo" />
+            <img src="./img/disco-icono.png" alt="logo" />
             <p>Expandimos redes en la escena electónica</p>
           </div>
           <div class="card-item">
@@ -89,23 +85,23 @@
             <p>Expandimos redes en la escena electónica</p>
           </div>
           <div class="card-item">
-            <img src="./img/logo-blanco.png" alt="logo" />
+            <img src="./img//play-icono.png" alt="logo" />
             <p>Expandimos redes en la escena electónica</p>
           </div>
-          <div class="link-container">
-            <iframe
-              class="link-youtube"
-              src="https://www.youtube.com/embed/tuSUz0ZFvPs"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
+        </div>
+        <div class="link-container">
+          <iframe
+            class="link-youtube"
+            src="https://www.youtube.com/embed/tuSUz0ZFvPs"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </section>
       <!-- Section 3: Grilla -->
-      <section class="grid-section">
+      <section class="grid-section" id="galery">
         <div class="grilla-img">
           <img
             src="./img/grilla.png"
@@ -128,7 +124,7 @@
         </div>
       </section>
       <!-- Section 4: Contact-->
-      <section class="contact-section">
+      <section class="contact-section" id="contact">
         <div class="mail-contact">
           <div class="mail-img">
             <img src="" alt="" />
